@@ -4,6 +4,7 @@ let news = [
     id: 1,
     title: "Typhoon Near Okinawa",
     country: "Japan",
+    image_set: "Flag_of_Japan.svg.png",
     desc: "Heavy rain and evacuation warnings issued."
     },
 
@@ -30,23 +31,30 @@ let news = [
 
 ]
 
+const RandomArticles = document.getElementById("RandomArticles")
+
 //News generated onload
 window.onload = function () {
     GenerateNews();
 }
 
+//Random Article generated onclick
+RandomArticles.onclick = function(){
+    GenerateNews();
+}
+
 //The function to GenerateNews
 function GenerateNews() {
-    let randomindexgen = Math.floor(Math.random() * news.length);
-
-    let selected = news[randomindexgen];
-    let container = document.getElementById("news-container");
-    
+    randomindexgen = Math.floor(Math.random() * news.length);
+    selected = news[randomindexgen];
+    container = document.getElementById("news-container");
 
     //News information randomized ! ! !
     container.innerHTML = `
     <h>${selected.title}</h>
+    <img src="Flags/${selected.image_set}">
     <p>${selected.country}</p>
     <p>${selected.desc}</p>
     `;
+    console.log(randomindexgen);
 }
