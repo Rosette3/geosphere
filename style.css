@@ -14,7 +14,41 @@ h1 {
     margin-left: 12px;
 }
 
+.RA {
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    font-size: 20px;
+}
+
+h {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#news-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+}
+
+.news-card {
+    background: linear-gradient(
+        0deg,
+        rgb(36, 34, 39),
+        #323339
+    );
+    outline: #222222;
+    padding: 20px;
+    border-radius: 0;
+    min-height: 180px;
+    margin: 10px;
+}
+
 .country-row {
+    background-color:
+    rgba(0, 0, 0, 0);
     display:flex;
     align-items: center;
     gap: 10px;
@@ -24,16 +58,16 @@ h1 {
 sac {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    color: #353535;
+    color: #ffffff;
     text-align: center;
     margin-top: 5px;
 }
 
 
-desc1 {
+.description {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
-    color: #353535;
+    color: #ffffff;
     
 
     margin-top: 5px;

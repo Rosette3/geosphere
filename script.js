@@ -48,16 +48,20 @@ RandomArticles.onclick = function(){
 
 //The function to GenerateNews
 function GenerateNews() {
-    randomindexgen = Math.floor(Math.random() * news.length);
-    selected = news[randomindexgen];
-    container = document.getElementById("news-container");
+    for (let i = 1; i <= 6; i++) {
+        randomindexgen = Math.floor(Math.random() * news.length);
+        selected = news[randomindexgen];
+        container = document.getElementById("news-container" + i);
 
-    //News information randomized ! ! !
-    container.innerHTML = `
-    <h>${selected.title}</h>
-    <div class="country-row"><sac>${selected.country}</sac><img class="Flags"
-    src="Flags/${selected.image_set}"></div>
-    <desc1>${selected.desc}</desc1>
-    `;
-    console.log(randomindexgen);
+        //News information randomized ! ! !
+        container.innerHTML = `
+        <h>${selected.title}</h>
+        <div class="country-row"><sac>${selected.country}</sac><img class="Flags"
+        src="Flags/${selected.image_set}"></div>
+        <p class="description">${selected.desc}</p class="description">
+        `;
+        console.log(randomindexgen);
+    }
+
 }
+
