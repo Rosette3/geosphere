@@ -1,5 +1,24 @@
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }  
+}
+
+.fade-card {
+    animation:
+    fadeUp 0.8s ease forwards;
+}
+
+html {
+    background-color: #0f0f0f;
+}
+
 div {
-    background-color: burlywood
+    background-color: 
+    rgba(0, 0, 0, 0);
 }
 
 .page {
@@ -10,18 +29,68 @@ div {
 h1 {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 48px;
-    color: #222222;
+    color: #ffffff;
     margin-left: 12px;
+    margin-bottom: 3px;
+}
+
+.smaller {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 16px;
+    margin-top: 3px;
 }
 
 .RA {
-    font-family: 'Courier New', Courier, monospace;
+    margin-left: 12px;
+    background: linear-gradient(
+        135deg,
+        #313338,
+        #232428
+    );
+    clip-path: polygon(
+        0 0,
+        92% 0,
+        100% 100%,
+        0 100%
+    );
+    transition: 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     font-size: 20px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    border-left: 4px solid #c24f6c;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow:
+    0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.RA span {
+    margin-left: 2px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.RA:hover {
+    transform: 
+    translateX(-20px);
+    filter: brightness(1.4);
+    border-left:4px solid #ac3868;
+    box-shadow:0px 0px 12px rgba(88,101,242,0.2);
+    background: linear-gradient(
+        135deg,
+        #53414a,
+        #773547
+        );
+    transition: 0.5s;
 }
 
 h {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -36,14 +105,59 @@ h {
 .news-card {
     background: linear-gradient(
         0deg,
-        rgb(36, 34, 39),
-        #323339
+        #2b2d31,
+        #313338
     );
     outline: #222222;
     padding: 20px;
     border-radius: 0;
     min-height: 180px;
     margin: 10px;
+    
+    transition:
+    background 0.5s,
+    transform 0.5s,
+    filter 0.5s;
+    opacity: 0;
+    animation:
+    fadeUp 0.8s ease forwards;
+}
+
+.news-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.news-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.news-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.news-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.news-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.news-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.news-card:hover {
+    transform: 
+    translateY(-2px);
+    filter:
+    brightness(1.2)
+    contrast(1.1);
+    background: linear-gradient(
+        135deg,
+        #53414a,
+        #773547
+        );
 }
 
 .country-row {
@@ -52,13 +166,14 @@ h {
     display:flex;
     align-items: center;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 sac {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: #ffffff;
+    font-style: italic;
+    font-size: 19px;
+    color: #919191;
     text-align: center;
     margin-top: 5px;
 }
@@ -73,7 +188,36 @@ sac {
     margin-top: 5px;
 }
 
+.date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #919191;
+    margin-top: 0px;
+}
+
 .Flags {
-    width: 35px;
+    width: 24px;
     height: auto;
+    border-radius: 2px;
+}
+
+.News {
+    margin-top: 5px;
+    width: 251px;
+    height: auto;
+    object-fit: cover;
+}
+
+.Loji {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.Loji:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
