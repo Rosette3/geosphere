@@ -183,8 +183,6 @@ sac {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: #ffffff;
-    
-
     margin-top: 5px;
 }
 
@@ -208,6 +206,215 @@ sac {
     height: auto;
     object-fit: cover;
 }
+
+.Globe {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#globeViz {
+    width: 100vw;
+    height: 100vh;
+}
+
+#panel {
+    position: relative;
+    width: 435px;
+    height: 100vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    margin-right: 12px;
+
+    background: linear-gradient(
+        0deg,
+        #232529,
+        #1d1e22
+    );
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    opacity: 0;
+    transform: translateX(250px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    pointer-events: none;
+    color: white;
+    padding: 0px 10px 10px 10px;
+}
+
+#panel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 300%;
+  background: linear-gradient(to bottom, #4fc3f7, #7c4dff);
+  opacity: 0.8;
+}
+
+#panel.active {
+    opacity: 1;
+    transform: 
+    translateX(0px);
+    background: linear-gradient(
+        0deg,
+        #232529,
+        #1d1e22
+    );
+    backdrop-filter: blur(14px);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+    transition:
+    opacity 0.8s ease,
+    transform 0.5s ease;
+    pointer-events: auto;
+    color: white;
+}
+
+.panel-news-card {
+    background: linear-gradient(
+        0deg,
+        #2b2d31,
+        #313338
+    );
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.panel-news-card:hover {
+    transform: filter: brightnes(1.4), contrast(1.4);
+    background: linear-gradient(
+        135deg,
+        #53414a,
+        #773547
+        );
+    padding: 10px;
+    border-radius: 0;
+}
+
+#panel::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.banner {
+    z-index: -2;
+    overflow: hidden;
+    margin: 0;
+    width: calc(100% + 20px);
+    height: auto;
+    margin-left: -10px;
+    margin-top: -15px;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(0.5);
+    mask-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 80%,
+        transparent 100%
+    );
+}
+
+.sc {
+    margin-left: 10px;
+    margin-top: 0;
+    align-items: normal;
+    user-select: none;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: auto;
+}
+
+.CountryHeader {
+    min-height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gh {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.gn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #cecece;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.gp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.gd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.gh,
+.gn,
+.gp,
+.gd {
+    position: relative;
+    z-index: 1;
+}
+
+.gnc {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    min-height: 190px;
+}
+
+.Newsac {
+    margin-top: 5px;
+    width: 241px;
+    height: auto;
+    object-fit: cover;
+}
+
+.no-news {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #cacaca;
+    margin-top: 15px;
+}
+
+
 
 .Loji {
     width: 100px;

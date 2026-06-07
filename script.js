@@ -79,8 +79,19 @@ let news = [
     },
 
     {
-    // RUSSIA
+    // POLAND
     id: 8,
+    title: "Edward Robot Gains Attention After Warsaw Public Safety and Government Appearances",
+    country: "Poland",
+    image_set: "Flag_of_Poland.svg.png",
+    date: "April 15, 2026",
+    news_image: "Poland_1.jpg",
+    desc: "A humanoid public interaction robot known as Edward has drawn widespread attention in Warsaw after being recorded interacting with civilians, assisting in crowd-facing situations, and appearing in multiple governmental and public institutions including the Polish parliament. The unit, part of an urban robotics research program, was also seen during a forest-edge incident where it assisted in redirecting civilians away from reported wild boar activity, later gaining viral attention online."
+    },
+
+    {
+    // RUSSIA
+    id: 9,
     title: "Russia Expands Arctic Shipping Infrastructure Projects",
     country: "Russia",
     image_set: "Flag_of_Russia.svg.png",
@@ -91,7 +102,7 @@ let news = [
 
     {
     // SINGAPORE
-    id: 9,
+    id: 10,
     title: "Singapore Expands Smart City Technology Systems",
     country: "Singapore",
     image_set: "Flag_of_Singapore.svg.png",
@@ -102,7 +113,7 @@ let news = [
 
     {
     // SOUTH KOREA
-    id: 10,
+    id: 11,
     title: "South Korea Expands Investment in AI Semiconductor Industry",
     country: "South Korea",
     image_set: "Flag_of_South_Korea.svg.png",
@@ -113,7 +124,7 @@ let news = [
 
     {
     // THAILAND
-    id: 11,
+    id: 12,
     title: "Thailand Legalizes Same-Sex Marriage",
     country: "Thailand",
     image_set: "Flag_of_Thailand.svg.png",
@@ -123,7 +134,7 @@ let news = [
     },
 
     {
-    id: 12,
+    id: 13,
     title: "Thailand Begins Nationwide Digital Wallet Economic Stimulus",
     country: "Thailand",
     image_set: "Flag_of_Thailand.svg.png",
@@ -133,7 +144,7 @@ let news = [
     },
 
     {
-    id: 13,
+    id: 14,
     title: "Thailand Accelerates High-Speed Rail Expansion Project",
     country: "Thailand",
     image_set: "Flag_of_Thailand.svg.png",
@@ -144,7 +155,7 @@ let news = [
 
     {
     // UNITED STATES OF AMERICA
-    id: 14,
+    id: 15,
     title: "United States Introduces New Artificial Intelligence Regulations",
     country: "United States",
     image_set: "Flag_of_the_United_States.svg",
