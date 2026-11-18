@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
 </head>
-<div class="page">
-<div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="top">
     <!-- Header -->
     <h1>GEOSPHERE</h1>
     <p class="smaller">Interactive 3D globe visualization project using Three.js</p>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </div>
 
-
-<div>
+<div class="page">
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="countries.html">Countries</a>
+        <a href="organizations.html">Organizations</a>
+    </nav>
+<div class="home-news">
     <!-- Navigation -->
-    <button class ="RA" id="RandomArticles">
+     <div id="home-articles">
+    <button class ="RArt" id="RandomArticles">
         <span>
-            Random Article
+            Article
         </span>
-    </button><br>
+    </button>
+    <button class ="LArt" id="LatestArticles">
+        <span>
+            Latest
+        </span>
+    </button>
+    <button class ="TArt" id="TopArticles">
+        <span>
+            Top Articles
+        </span>
+    </button>
+    <button class ="RGArt" id="RegionalArticles">
+        <span>
+            Regional
+        </span>
+    </button>
+    <button class ="TDArt" id="TrendingArticles">
+        <span>
+            Trending
+        </span>
+    </button>
+    </div><br>
     <div id="news-grid">
-        <div class="news-card"><SuggestedNews id="news-container1"></SuggestedNews></div>
-        <div class="news-card"><SuggestedNews id="news-container2"></SuggestedNews></div>
-        <div class="news-card"><SuggestedNews id="news-container3"></SuggestedNews></div>
-        <div class="news-card"><SuggestedNews id="news-container4"></SuggestedNews></div>
-        <div class="news-card"><SuggestedNews id="news-container5"></SuggestedNews></div>
-        <div class="news-card"><SuggestedNews id="news-container6"></SuggestedNews></div>
+        <div class="news-card"><SuggestedNews id="news-container1" href="Article1.html"></SuggestedNews></div>
+        <div class="news-card"><SuggestedNews id="news-container2" href="Article2.html"></SuggestedNews></div>
+        <div class="news-card"><SuggestedNews id="news-container3" href="Article3.html"></SuggestedNews></div>
+        <div class="news-card"><SuggestedNews id="news-container4" href="Article4.html"></SuggestedNews></div>
+        <div class="news-card"><SuggestedNews id="news-container5" href="Article5.html"></SuggestedNews></div>
+        <div class="news-card"><SuggestedNews id="news-container6" href="Article6.html"></SuggestedNews></div>
     </div>
 
     <script src="script.js"></script>
@@ -75,12 +103,9 @@
     </button>
 
 
-    
     <button onclick="selectcountry('Australia')">
     Australia
     </button>
-
-
 
     <button onclick="selectcountry('Austria')">
     Austria
@@ -89,6 +114,93 @@
     <button onclick="selectcountry('Azerbaijan')">
     Azerbaijan
     </button>
+
+    <button onclick="selectcountry('Bahamas')">
+    Bahamas
+    </button>
+    
+    <button onclick="selectcountry('Bahrain')">
+    Bahrain
+    </button>
+
+    <button onclick="selectcountry('Bangladesh')">
+    Bangladesh
+    </button>
+
+    <button onclick="selectcountry('Barbados')">
+    Barbados
+    </button>
+
+    <button onclick="selectcountry('Belarus')">
+    Belarus
+    </button>
+
+    <button onclick="selectcountry('Belgium')">
+    Belgium
+    </button>
+
+    <button onclick="selectcountry('Belize')">
+    Belize
+    </button>
+
+    <button onclick="selectcountry('Benin')">
+    Benin
+    </button>
+
+    <button onclick="selectcountry('Bhutan')">
+    Bhutan
+    </button>
+
+    <button onclick="selectcountry('Bolivia')">
+    Bolivia
+    </button>
+
+    <button onclick="selectcountry('Bosnia and Herzegovina')">
+    Bosnia and Herzegovina
+    </button>
+
+    <button onclick="selectcountry('Botswana')">
+    Botswana
+    </button>
+
+    <button onclick="selectcountry('Brazil')">
+    Brazil
+    </button>
+
+    <button onclick="selectcountry('Brunei')">
+    Brunei
+    </button>
+
+    <button onclick="selectcountry('Bulgaria')">
+    Bulgaria
+    </button>
+
+    <button onclick="selectcountry('Burkina Faso')">
+    Burkina Faso
+    </button>
+
+    <button onclick="selectcountry('Burundi')">
+    Burundi
+    </button>
+
+    <button onclick="selectcountry('Cambodia')">
+    Cambodia
+    </button>
+
+
+
+
+
+
+    <button onclick="selectcountry('China')">
+    China
+    </button>
+
+
+
+
+
+
 
 
 
@@ -119,9 +231,9 @@
     </div>
     </div>
 
-    <script src="globe.js"></script>
+    <script type="module" src="scripts/country-selector.js"></script>
 </div>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap">
 <div>
     <button onclick="randomNews()">
         Random Article
@@ -153,4 +265,3 @@
 <!-- top head title -->
 <!-- logo and contact bottom page -->
  <!-- Buy a domain or make a github website page. -->
-        
