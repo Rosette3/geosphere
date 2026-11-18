@@ -1,0 +1,156 @@
+html {
+    background-color: #242424;
+}
+
+.page {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding-left: 10%;
+    
+    background: #0f0f0f;
+    color: white;
+    border-bottom: 2px solid #575757;
+}
+
+h1 {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: -10px;
+}
+
+.smaller {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 3px;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+
+    margin-left: 240px;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    color: #77797a;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+    font-size: 18px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#article-category {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 2cap;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#article-title {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: -20px;
+}
+
+
+#article-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px auto 30px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#article-country {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#article-date {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#article-author {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#article-description {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#article-content {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#article-status {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+
+// Mobiles
+@media (max-width: 100%) {
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding-left: 10%;
+    
+    background: #0f0f0f;
+    color: white;
+    border-bottom: 2px solid #575757;
+}
+}

@@ -194,18 +194,21 @@ function GenerateNews() {
 
         //News information randomized ! ! !
         container.innerHTML = `
-        <h>${selected.title}</h>
-        <div class="country-row"><sac>${selected.country}</sac><img class="Flags"
-        src="Flags/${selected.image_set}"></div>
-        <p class="date">${selected.date}</p class="date">
-        <img class="News" src="News/${selected.news_image}"</img class="News">
-        <p class="description">${selected.desc}</p class="description">
+            <h>${selected.title}</h>
+            <div class="country-row">
+            <sac>${selected.country}</sac>
+            <img class="Flags" src="Flags/${selected.image_set}">
+        </div>
+        <p class="date">${selected.date}</p>
+        <img class="News" src="News/${selected.news_image}">
+        <p class="description">${selected.desc}</p>
         `;
-        console.log(randomindexgen);
-        container.classList.remove("fade-card");
-        void container.offsetWidth;
-        container.classList.add("fade-card");
+
+        container.onclick = function () {
+            window.location.href =
+            `article.html?id=${encodeURIComponent(selected.id)}`;
+        };
+        
+        container.style.cursor = "pointer";
     }
-
 }
-
