@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="top">
+    <!-- Header -->
+    <h1>GEOSPHERE</h1>
+    <p class="smaller">Interactive 3D globe visualization project using Three.js</p>
+    <link rel="stylesheet" href="organizations.css">
+</div>
+
+<div class="page">
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="countries.html">Countries</a>
+        <a href="organizations.html">Organizations</a>
+    </nav>
+</div>
+
+<main class="organization-page">
+
+    <section class="organization-profile" id="organization-profile">
+        <div class="organization-heading">
+            <img id="organization-logo" src="" alt="Organization logo">
+            <div>
+                <h1 id="organization-name">Loading...</h1>
+                <p id="organization-abbreviation"></p>
+            </div>
+        </div>
+
+        <div class="organization-details">
+            <h2>Organization Information</h2>
+
+            <p><strong>Type:</strong> <span id="organization-type"></span></p>
+            <p><strong>Founded:</strong> <span id="organization-founded"></span></p>
+            <p><strong>Headquarters:</strong> <span id="organization-headquarters"></span></p>
+            <p><strong>Leader:</strong> <span id="organization-leader"></span></p>
+
+            <p>
+                <strong>Website:</strong>
+                <a id="organization-website" href="#" target="_blank">Visit website</a>
+            </p>
+        </div>
+
+        <div class="organization-about">
+            <h2>About</h2>
+            <p id="organization-description"></p>
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT: ORGANIZATION NEWS -->
+    <section class="organization-news-section">
+        <h2>Latest News</h2>
+        <p class="news-subtitle">Articles published by this organization</p>
+        <p id="news-status">Loading news...</p>
+        <div id="organization-news"></div>
+    </section>
+
+</main>
+
+<script type="module" src="scripts/organization-page.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap">
+</html>
+
+

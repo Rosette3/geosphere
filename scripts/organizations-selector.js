@@ -21,21 +21,18 @@ if (organizations.length === 0) {
 }
 
 organizations.forEach(organization => {
-    // Create a clickable link for each organization
+
     const card = document.createElement("a");
     card.className = "organization-card";
     card.href = `organization.html?id=${encodeURIComponent(organization.id)}`;
 
-    // Organization logo
     const logo = document.createElement("img");
     logo.src = `organization/${organization.logo}`;
     logo.alt = `${organization.name} logo`;
 
-    // Organization name
     const name = document.createElement("h2");
     name.textContent = organization.name ?? "Unnamed organization";
 
-    // Organization type
     const type = document.createElement("p");
     type.textContent = organization.type ?? "Type not specified";
 

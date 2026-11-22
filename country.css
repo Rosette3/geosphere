@@ -1,0 +1,156 @@
+html {
+    background-color: #242424;
+}
+
+.page {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding-left: 10%;
+    
+    background: #0f0f0f;
+    color: white;
+    border-bottom: 2px solid #575757;
+}
+
+h1 {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: -10px;
+}
+
+.smaller {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 3px;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+
+    margin-left: 240px;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    color: #77797a;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+    font-size: 18px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+.countrypage {
+    width: 85%;
+    max-width: 1400px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.9fr;
+    gap: 40px;
+
+    color: white;
+    font-family: 'Geist Pixel', sans-serif;
+}
+
+.country-profile {
+    grid-column: 2;
+    grid-row: 1;
+
+    padding: 25px;
+    background: #303030;
+    border: 1px solid #484848;
+    height: fit-content;
+}
+
+.country-heading {
+    display: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#country-flag {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+#country-name {
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+#country-fullname {
+    color: #999;
+    font-size: 14px;
+}
+
+.country-details,
+.country-about {
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.country-profile h2 {
+    font-size: 18px;
+}
+
+.country-profile p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* LEFT SIDE: COUNTRY NEWS */
+
+.country-news-section {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+}
+
+.country-news-section > h2 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+/* NEWS GRID */
+
+#country-news {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}

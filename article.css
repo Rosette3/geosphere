@@ -140,17 +140,3 @@ h1 {
 
 
 
-// Mobiles
-@media (max-width: 100%) {
-.top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 15px;
-    padding-left: 10%;
-    
-    background: #0f0f0f;
-    color: white;
-    border-bottom: 2px solid #575757;
-}
-}

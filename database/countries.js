@@ -137,112 +137,196 @@ export const Countrylist = {
         city: "Nassau.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Bahrain: {
+        name: "Bahrain",
+        fullname: "Kingdom of Bahrain",
+        capital: "Manama",
+        population: "1,404,900",
+        region: "Western Asia",
+        government:	"Constitutional Monarchy",
+        description: "Bahrain, officially the Kingdom of Bahrain, is a small island country in the Persian Gulf. It is located on a string of islands and a small mainland portion. The country is bordered by Saudi Arabia and Iraq.",
+        flag: "Flag_of_Bahrain.svg.webp",
+        city: "Manama.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Bangladesh: {
+        name: "Bangladesh",
+        fullname: "People's Republic of Bangladesh",
+        capital: "Dhaka",
+        population: "164,689,383",
+        region: "Southern Asia",
+        government:	"Unitary Parliamentary Republic",
+        description: "Bangladesh, officially the People's Republic of Bangladesh, is a country in South Asia. It is bordered by India on all sides except for a small border with Myanmar to the southeast.",
+        flag: "Flag_of_Bangladesh.svg.webp",
+        city: "Dhaka.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Barbados: {
+        name: "Barbados",
+        fullname: "Barbados",
+        capital: "Bridgetown",
+        population: "287,024",
+        region: "The Caribbean",
+        government:	"Unitary Parliamentary Constitutional Monarchy",
+        description: "Barbados is a sovereign island country in the Lesser Antilles, in the Caribbean Sea. It is 34 km (21 mi) long and 21 km (13 mi) wide, with a total area of 430 km2 (166 sq mi).",
+        flag: "Flag_of_Barbados.svg.webp",
+        city: "Bridgetown.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Belarus: {
+        name: "Belarus",
+        fullname: "Republic of Belarus",
+        capital: "Minsk",
+        population: "9,493,210",
+        region: "Eastern Europe",
+        government:	"Unitary Presidential Republic",
+        description: "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the north and east, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest.",
+        flag: "Flag_of_Belarus.svg.webp",
+        city: "Minsk.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Belgium: {
+        name: "Belgium",
+        fullname: "Kingdom of Belgium",
+        capital: "Brussels",
+        population: "11,589,621",
+        region: "Western Europe",
+        government:	"Constitutional Monarchy",
+        description: "Belgium, officially the Kingdom of Belgium, is a country in Western Europe. It is bordered by France to the south and west, Germany to the east, and the Netherlands to the north.",
+        flag: "Flag_of_Belgium.svg.webp",
+        city: "Brussels.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Belize: {
+        name: "Belize",
+        fullname: "Belize",
+        capital: "Belmopan",
+        population: "397,517",
+        region: "Central America",
+        government:	"Unitary Parliamentary Constitutional Monarchy",
+        description: "Belize is a country in Central America. It is bordered by Mexico to the north, Guatemala to the south and east, and the Caribbean Sea to the east.",
+        flag: "Flag_of_Belize.svg.webp",
+        city: "Belmopan.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Benin: {
+        name: "Benin",
+        fullname: "Republic of Benin",
+        capital: "Porto-Novo",
+        population: "12,123,200",
+        region: "Western Africa",
+        government:	"Unitary Presidential Republic",
+        description: "Benin, officially the Republic of Benin, is a country in West Africa. It is bordered by Togo to the west, Nigeria to the east, and Burkina Faso and Mali to the north.",
+        flag: "Flag_of_Benin.svg.webp",
+        city: "Porto-Novo.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Bhutan: {
+        name: "Bhutan",
+        fullname: "Kingdom of Bhutan",
+        capital: "Thimphu",
+        population: "770,000",
+        region: "Southern Asia",
+        government:	"Constitutional Monarchy",
+        description: "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in the Eastern Himalayas. It is bordered by China to the north and India to the south, east and west.",
+        flag: "Flag_of_Bhutan.svg.webp",
+        city: "Thimphu.jpg"
     },
 
-    B: {
-        name: "a",
-        fullname: "a",
-        capital: "a",
-        population: "a",
-        region: "a",
-        government:	"a",
-        description: "a",
-        flag: "Flag_of_A.svg.png",
-        city: "A.jpg"
+    Bolivia: {
+        name: "Bolivia",
+        fullname: "Plurinational State of Bolivia",
+        capital: "Sucre",
+        population: "11,673,029",
+        region: "South America",
+        government:	"Unitary Presidential Republic",
+        description: "Bolivia, officially the Plurinational State of Bolivia, is a landlocked country in central-western South America. It is bordered by Brazil to the north and east, Paraguay to the southeast, Argentina to the south, Chile to the southwest, and Peru to the west.",
+        flag: "Flag_of_Bolivia.svg.webp",
+        city: "Sucre.jpg"
+    },
+
+    Bosnia_and_Herzegovina: {
+        name: "Bosnia and Herzegovina",
+        fullname: "Bosnia and Herzegovina",
+        capital: "Sarajevo",
+        population: "3,280,819",
+        region: "Southern Europe",
+        government:	"Federal Parliamentary Republic",
+        description: "Bosnia and Herzegovina, often referred to as Bosnia, is a country in Southeastern Europe located on the Balkan Peninsula. It is bordered by Croatia to the north, west and south; Serbia to the east; and Montenegro to the southeast. It has a small coastline along the Adriatic Sea in the southwest. The capital and largest city is Sarajevo.",
+        flag: "Flag_of_Bosnia_and_Herzegovina.svg.webp",
+        city: "Sarajevo.jpg"
+    },
+
+    Botswana: {
+        name: "Botswana",
+        fullname: "Republic of Botswana",
+        capital: "Gaborone",
+        population: "2,351,627",
+        region: "Southern Africa",
+        government:	"Unitary Parliamentary Republic",
+        description: "Botswana, officially the Republic of Botswana, is a landlocked country in Southern Africa. It is bordered by Namibia to the west and north, Zimbabwe to the northeast, and South Africa to the south and southeast.",
+        flag: "Flag_of_Botswana.svg.webp",
+        city: "Gaborone.jpg"
+    },
+
+    Brazil: {
+        name: "Brazil",
+        fullname: "Federative Republic of Brazil",
+        capital: "Brasília",
+        population: "213,993,437",
+        region: "South America",
+        government:	"Federal Presidential Republic",
+        description: "Brazil, officially the Federative Republic of Brazil, is the largest country in both South America and Latin America. It is the world's fifth-largest country by area and the sixth-most populous. It is the largest country to have Portuguese as an official language and the only one in the Americas.",
+        flag: "Flag_of_Brazil.svg.png",
+        city: "Brasília.jpg"
+    },
+
+    Brunei: {
+        name: "Brunei",
+        fullname: "Nation of Brunei, the Abode of Peace",
+        capital: "Bandar Seri Begawan",
+        population: "437,479",
+        region: "Southeast Asia",
+        government:	"Unitary Absolute Monarchy",
+        description: "Brunei, officially the Nation of Brunei, the Abode of Peace, is a country located on the north coast of the island of Borneo in Southeast Asia. It is surrounded by the Malaysian state of Sarawak and has a coastline with the South China Sea.",
+        flag: "Flag_of_Brunei.svg.webp",
+        city: "Bandar_Seri_Begawan.jpg"
+    },
+
+    Bulgaria: {
+        name: "Bulgaria",
+        fullname: "Republic of Bulgaria",
+        capital: "Sofia",
+        population: "6,520,314",
+        region: "Southeastern Europe",
+        government:	"Unitary Parliamentary Republic",
+        description: "Bulgaria, officially the Republic of Bulgaria, is a country in Southeastern Europe. It is bordered by Romania to the north, Serbia and North Macedonia to the west, Greece and Turkey to the south, and the Black Sea to the east. Bulgaria covers a territory of 110,994 square kilometres (42,855 sq mi) and is the 16th-largest country in Europe. Its population is around 6.5 million people, making it the 14th-most populous country in Europe.",
+        flag: "Flag_of_Bulgaria.svg.webp",
+        city: "Sofia.jpg"
+    },
+
+    Burkina_Faso: {
+        name: "Burkina Faso",
+        fullname: "Burkina Faso",
+        capital: "Ouagadougou",
+        population: "21,510,181",
+        region: "Western Africa",
+        government:	"Unitary Semi-Presidential Republic",
+        description: "Burkina Faso, officially Burkina Faso, is a landlocked country in West Africa. It is bordered by Mali to the north, Niger to the east, Benin to the southeast, Togo and Ghana to the south, and Côte d'Ivoire to the southwest. The capital of Burkina Faso is Ouagadougou.",
+        flag: "Flag_of_Burkina_Faso.svg.webp",
+        city: "Ouagadougou.jpg"
+    },
+
+    Burundi: {
+        name: "Burundi",
+        fullname: "Republic of Burundi",
+        capital: "Gitega",
+        population: "12,255,433",
+        region: "Eastern Africa",
+        government:	"Unitary Presidential Republic",
+        description: "Burundi, officially the Republic of Burundi, is a landlocked country in the Great Rift Valley where the African Great Lakes region and East Africa converge. It is bordered by Rwanda to the north, Tanzania to the east and south, and the Democratic Republic of the Congo to the west. Burundi is a member of the East African Community. The capital is Gitega, while Bujumbura is the largest city and main port.",
+        flag: "Flag_of_Burundi.svg.webp",
+        city: "Gitega.jpg"
     },
 
     Cambodia: {
@@ -274,7 +358,18 @@ export const Countrylist = {
 // Cambodia –  Cameroon –  Canada –  Cape Verde –  Central African Republic –  Chad –  Chile –  China –  Colombia –  Comoros –  Costa Rica –  Croatia –  Cuba –  Cyprus –  Czech Republic
 //Democratic Republic of the Congo –  Denmark –  Djibouti –  Dominica –  Dominican Republic
 // East Timor –  Ecuador –  Egypt –  El Salvador –  Equatorial Guinea –  Eritrea –  Estonia –  Eswatini –  Ethiopia
-// Federated States of Micronesia –  Fiji –  Finland –  France
+// Federated States of Micronesia –  Fiji –  Finland
+    France: {
+        name: "France",
+        fullname: "French Republic",
+        capital: "Paris",
+        population: "68,128,200",
+        region: "Western Europe",
+        government:	"Unitary Semi-Presidential Republic",
+        description: "France, officially the French Republic, is a country in Western Europe. It is located in the heart of Europe and has a long coastline along the English Channel and the Mediterranean Sea.",
+        flag: "Flag_of_France.svg.png",
+        city: "Paris.jpg"
+    },
 // Gabon –  Gambia, The –  Georgia –  
         Germany: {
         name: "Germany",
@@ -290,7 +385,19 @@ export const Countrylist = {
 //  –  Ghana –  Greece –  Grenada –  Guatemala –  Guinea –  Guinea-Bissau –  Guyana
 // Haiti –  Honduras –  Hungary
 // Iceland –  India –  Indonesia –  Iran –  Iraq –  Ireland –  Israel –  Italy –  Ivory Coast
-// Jamaica –  Japan –  Jordan
+// Jamaica
+    Japan: {
+        name: "Japan",
+        fullname: "Japan",
+        capital: "Tokyo",
+        population: "125,836,021",
+        region: "East Asia",
+        government:	"Unitary Parliamentary Constitutional Republic",
+        description: "Japan is an island nation in East Asia, located in the Pacific Ocean. It is bordered by the Sea of Japan to the west and the Philippine Sea to the east.",
+        flag: "Flag_of_Japan.svg.png",
+        city: "Tokyo.jpg"
+    },
+// Jordan
 // Kazakhstan –  Kenya –  Kiribati –  Kuwait –  Kyrgyzstan
 // Laos –  Latvia –  Lebanon –  Lesotho –  Liberia –  Libya –  Liechtenstein –  Lithuania –  Luxembourg
 // Madagascar –  Malawi –  Malaysia –  Maldives –  Mali –  Malta –  Marshall Islands –  Mauritania –  Mauritius –  Mexico –  Moldova –  Monaco –  Mongolia –  Montenegro –  Morocco –  Mozambique –  Myanmar
@@ -310,8 +417,44 @@ export const Countrylist = {
     }, 
 //  –  Portugal
 // Qatar
-// Republic of the Congo –  Romania –  Russia –  Rwanda
-// Saint Kitts and Nevis –  Saint Lucia –  Saint Vincent and the Grenadines –  Samoa –  San Marino –  Saint Helena -  São Tomé and Príncipe –  Saudi Arabia –  Senegal –  Serbia –  Seychelles –  Sierra Leone –  Singapore –  Slovakia –  Slovenia –  Solomon Islands –  Somalia –  South Africa –  South Korea –  South Sudan –  Spain –  Sri Lanka –  Sudan –  Suriname –  Sweden –   Switzerland –  Syria
+// Republic of the Congo –  Romania
+    Russia: {
+        name: "Russia",
+        fullname: "Russian Federation",
+        capital: "Moscow",
+        population: "145,934,000",
+        region: "Eastern Europe",
+        government:	"Federal Presidential Republic",
+        description: "Russia, officially the Russian Federation, is a transcontinental country in Eastern Europe and Northern Asia. It is the largest country in the world by land area, spanning eleven time zones and extending from the Baltic Sea in the west to the Pacific Ocean in the east.",
+        flag: "Flag_of_Russia.svg.png",
+        city: "Moscow.jpg"
+    },
+// Rwanda
+// Saint Kitts and Nevis –  Saint Lucia –  Saint Vincent and the Grenadines –  Samoa –  San Marino –  Saint Helena -  São Tomé and Príncipe –  Saudi Arabia –  Senegal –  Serbia –  Seychelles –  Sierra Leone –  
+    Singapore: {
+        name: "Singapore",
+        fullname: "Republic of Singapore",
+        capital: "Singapore",
+        population: "5,850,343",
+        region: "Southeast Asia",
+        government:	"Unitary Parliamentary Constitutional Republic",
+        description: "Singapore, officially the Republic of Singapore, is a sovereign city-state in Southeast Asia. It is located just south of the Malaysian peninsula and is separated from Indonesia by the Strait of Malacca.",
+        flag: "Flag_of_Singapore.svg.png",
+        city: "Singapore.jpg"
+    },
+// Slovakia –  Slovenia –  Solomon Islands –  Somalia –  South Africa
+    South_Korea: {
+        name: "South Korea",
+        fullname: "Republic of Korea",
+        capital: "Seoul",
+        population: "5,126,959",
+        region: "East Asia",
+        government:	"Unitary Semi-Presidential Republic",
+        description: "South Korea, officially the Republic of Korea, is a country in East Asia. It is located on the southern half of the Korean Peninsula and shares a border with North Korea.",
+        flag: "Flag_of_South_Korea.svg.png",
+        city: "Seoul.jpg"
+    },
+// South Sudan –  Spain –  Sri Lanka –  Sudan –  Suriname –  Sweden –   Switzerland –  Syria
 // Tajikistan –  Tanzania –  
        Thailand: {
         name: "Thailand",
@@ -325,7 +468,31 @@ export const Countrylist = {
         city: "Bangkok.jpg"
     }, 
 // –  Togo –  Tonga –  Trinidad and Tobago -  Tunisia -  Turkey -  Turkmenistan -  Tuvalu
-// Uganda –  Ukraine –  United Arab Emirates –  United Kingdom –  United States –  Uruguay –  Uzbekistan
+// Uganda –  Ukraine –  United Arab Emirates –  
+    UK: {
+        name: "United Kingdom",
+        fullname: "United Kingdom of Great Britain and Northern Ireland",
+        capital: "London",
+        population: "55,918,000",
+        region: "Northern Europe",
+        government:	"Constitutional Monarchy",
+        description: "The United Kingdom is a sovereign country in Europe, consisting of England, Scotland, Wales, and Northern Ireland. It is bordered by the Atlantic Ocean to the west, the North Sea to the east, and the English Channel to the south.",
+        flag: "Flag_of_A.svg.png",
+        city: "A.jpg"
+    },
+
+    USA: {
+        name: "United States",
+        fullname: "United States of America",
+        capital: "Washington, D.C.",
+        population: "331,002,651",
+        region: "North America",
+        government:	"Federal Presidential Constitutional Republic",
+        description: "The United States of America is a federal republic consisting of 50 states, a federal district, five major self-governing territories, and various possessions.",
+        flag: "Flag_of_United_States.svg",
+        city: "A.jpg"
+    },
+//  United Kingdom United States –  Uruguay –  Uzbekistan
 // Vanuatu –   Vatican City –  Venezuela –  Vietnam
 // Yemen
 // Zambia –  Zanzibar -  Zimbabwe

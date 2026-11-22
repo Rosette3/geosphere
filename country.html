@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GEOSPHERE | Country</title>
+
+    <link rel="stylesheet" href="country.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap">
+</head>
+
+<body>
+
+<div class="top">
+    <h1>GEOSPHERE</h1>
+    <p class="smaller">Interactive 3D globe visualization project using Three.js</p>
+</div>
+
+<div class="page">
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="countries.html">Countries</a>
+        <a href="organizations.html">Organizations</a>
+    </nav>
+</div>
+
+<main class="countrypage">
+
+    <!-- LEFT: COUNTRY NEWS -->
+    <section class="country-news-section">
+        <h2>Latest News</h2>
+        <p class="news-subtitle">Recent news related to this country</p>
+
+        <p id="news-status">Loading news...</p>
+        <div id="country-news"></div>
+    </section>
+
+    <!-- RIGHT: COUNTRY PROFILE -->
+    <section class="country-profile" id="country-profile">
+
+        <div class="country-heading">
+            <h1 id="country-name">Loading...</h1>
+            <p id="country-fullname"></p>
+            <img id="country-flag" src="" alt="Country flag">
+        </div>
+
+        <div class="country-details">
+            <h2>Country Information</h2>
+
+            <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+            <p><strong>Population:</strong> <span id="country-population"></span></p>
+            <p><strong>Region:</strong> <span id="country-region"></span></p>
+            <p><strong>Government:</strong> <span id="country-government"></span></p>
+        </div>
+
+        <div class="country-about">
+            <h2>About</h2>
+            <p id="country-description"></p>
+        </div>
+
+    </section>
+
+</main>
+
+<script type="module" src="scripts/country_page.js"></script>
+</body>
+</html>
