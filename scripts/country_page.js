@@ -16,6 +16,7 @@ document.body.insertAdjacentHTML("beforeend", `
 
 if (!country) throw new Error("Country not found");
 
+document.getElementById("country-city").src = `Cities/${country.city}`;
 document.getElementById("country-flag").src = `Flags/${country.flag}`;
 document.getElementById("country-name").textContent = country.name ?? countryKey;
 document.getElementById("country-fullname").textContent = country.fullname ?? "";

@@ -86,42 +86,71 @@ h1 {
     grid-column: 2;
     grid-row: 1;
 
-    padding: 25px;
+    padding: 15px;
     background: #303030;
     border: 1px solid #484848;
     height: fit-content;
 }
 
 .country-heading {
-    display: relative;
+    display: grid;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    isolation: isolate;
 }
 
 #country-flag {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 150px;
     object-fit: contain;
+    justify-self: center;
+}
+
+#country-city {
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+
+    width: 460px;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+    margin-top: -2.5px;
+    margin-left: -5px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 55%,
+        transparent 100%
+    );
+
 }
 
 #country-name {
-    font-size: 25px;
-    margin-left: 100px;
+    font-size: 50px;
+    margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
 }
 
 #country-fullname {
-    color: #999;
-    font-size: 14px;
+    color: #c7c7c7;
+    font-size: 20px;
+    justify-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .country-details,
 .country-about {
-    border-top: 1px solid #555;
-    padding-top: 15px;
-    margin-top: 20px;
+    border-top: 2px solid #888888;
+    padding-top: 5px;
+    margin-top: 5px;
+    isolation: isolate;
 }
 
 .country-profile h2 {
@@ -134,7 +163,14 @@ h1 {
     color: #ccc;
 }
 
-/* LEFT SIDE: COUNTRY NEWS */
+
+
+
+
+
+
+
+
 
 .country-news-section {
     grid-column: 1;
@@ -146,8 +182,6 @@ h1 {
     font-size: 25px;
     margin-top: 0;
 }
-
-/* NEWS GRID */
 
 #country-news {
     display: grid;

@@ -411,29 +411,50 @@ sac {
 }
 
 .Globe {
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 0px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0);
-    font-family: 'Geist Pixel', Helvetica, sans-serif;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0 clamp(16px, 4vw, 64px);
+
+
+    overflow: visible;
+    background: transparent;
 }
 
 #globeViz {
-    width: 1px;
-    height: 600px;
+    flex: 1 1 100%;
+    min-width: 0;
+    height: 500px;
+
+    position: relative;
+    transition: flex 0.6s ease;
 }
 
-.app {
-    width: 800px;
+#globeViz canvas {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
+
+
+
+
+.Globe:has(#panel.active) #panel {
+    flex: 0 0 350px;
+    width: 350px;
+    padding: 10px;
+
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+
 
 #panel {
     position: relative;
-    width: 475px;
+    width: 350px;
     height: 100vh;
 
     overflow-y: auto;
@@ -456,9 +477,11 @@ sac {
     padding: 0px 10px 10px 10px;
 }
 
+
+
 #panel::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   width: 2px;
@@ -509,7 +532,7 @@ sac {
 
 .panel-news-card:hover {
     transform: filter: brightnes(1.4), contrast(1.4);
-    background: linear-gradient(
+    background linear-gradient(
         135deg,
         #53414a,
         #773547
