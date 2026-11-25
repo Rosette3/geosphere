@@ -42,7 +42,9 @@ h1 {
     font-size: 20px;
     color: #ffffff;
 
-    margin-left: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -60,6 +62,36 @@ h1 {
     transition: 0.3s ease;
 }
 
+
+.under-development {
+    position: relative;
+    overflow: hidden;
+}
+
+.under-development::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.under-development::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        135deg,
+        transparent 0px,
+        transparent 12px,
+        rgba(255, 255, 255, 0.12) 12px,
+        rgba(255, 255, 255, 0.12) 16px
+    );
+    z-index: 3;
+    pointer-events: none;
+    filter: brightness(0.6);
+}
 
 
 

@@ -17,7 +17,55 @@
         <a href="news.html">News</a>
         <a href="countries.html">Countries</a>
         <a href="organizations.html">Organizations</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="about.html">About</a>
     </nav>
+
+
+    
+<section class="headline-section">
+    <h2>TODAY'S HEADLINES</h2>
+    <div class="headline-layout">
+
+        <article class="main-headline" id="featured-headline">
+            <span class="headline-label">TOP STORY</span>
+            <h2>Main headline goes here</h2>
+            <div class="bottom-headline">
+                <p class="headline-description">
+                    Short description of today's biggest story.
+                </p>
+                <span class="headline-meta">
+                    Country · Category · Date
+                </span>
+            </div>
+        </article>
+
+        <div class="latest-news">
+            <h3>LATEST NEWS</h3>
+            <div id="latest-news">
+                <!--aaaaaa-->
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+
+<div class="Globe">
+    <!-- Globe -->
+
+    <div id="globeViz">
+        <canvas></canvas>
+    </div>
+
+    <div class="app">
+        <div id="panel">
+        <p id="newsText">
+            Select a country
+        </p>
+    </div>
+
 <div class="home-news">
     <!-- Navigation -->
      <div id="home-articles">
@@ -46,7 +94,8 @@
             Trending
         </span>
     </button>
-    </div><br>
+</div>
+
     <div id="news-grid">
         <div class="news-card"><SuggestedNews id="news-container1"></SuggestedNews></div>
         <div class="news-card"><SuggestedNews id="news-container2"></SuggestedNews></div>
@@ -56,28 +105,6 @@
         <div class="news-card"><SuggestedNews id="news-container6"></SuggestedNews></div>
     </div>
 
-    <script src="script.js"></script>
-
-</div>
-
-<script type="module" src="sphere.js"></script>
-
-<div class="Globe">
-    <!-- Globe -->
-
-    <div id="globeViz">
-        <canvas></canvas>
-    </div>
-
-    <div class="app">
-        <div id="panel">
-        <p id="newsText">
-            Select a country
-        </p>
-    </div>
-    </div>
-
-    <script type="module" src="scripts/country-selector.js"></script>
 </div>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap">
 <div>
@@ -248,6 +275,11 @@
     </button>
     </div>
 </html>
+
+<script type="module" src="scripts/home/headlines.js"></script>
+<script src="script.js"></script>
+<script type="module" src="sphere.js"></script>
+<script type="module" src="scripts/country-selector.js"></script>
 
 <!-- To do list -->
 <!-- Search Bar + Filters and Categories -->

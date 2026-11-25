@@ -42,7 +42,9 @@ h1 {
     font-size: 20px;
     color: #ffffff;
 
-    margin-left: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -65,6 +67,20 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
+.art-top-page {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    gap: 15px;
+    align-items: stretch;
+}
 
 
 
@@ -140,3 +156,151 @@ h1 {
 
 
 
+
+
+
+
+
+.article-fact {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #242424;
+    border: 2px solid #484848;
+    padding: 10px;
+
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.article-summary {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.article-evidence {
+    background-color: #242424;
+    border: 2px solid #484848;
+    padding: 15px;
+}
+
+.article-evidence summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Evidence section */
+.article-evidence {
+    background: transparent;
+    color: #332929;
+    border: 1px solid rgba(51, 41, 41, 0.35);
+}
+
+/* Expandable heading */
+.article-evidence summary {
+    font-weight: bold;
+}
+
+/* Claim content */
+.factcheck-claim {
+    background: transparent;
+}
+
+/* Claim text */
+.factcheck-claim h4,
+.factcheck-claim p {
+}
+
+/* Evidence sources */
+.factcheck-sources {
+    background: transparent;
+}
+
+.factcheck-sources a {
+    color: #dd0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.article-fact {
+    padding: 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.article-fact.verified {
+    background-color: #2563EB;
+    color: white;
+}
+
+.article-fact.verified .article-evidence {
+    background-color: #1c47a3;
+    color: white;
+    border-color: #15357a;
+}
+
+.article-fact.partially-verified {
+    background-color: #EAB308;
+    color: #332929;
+}
+
+.article-fact.partially-verified .article-evidence {
+    background-color: #F5CD52;
+    color: #332929;
+    border-color: #C99B16;
+}
+
+.article-fact.disputed {
+    background-color: #DC2626;
+    color: white;
+}
+
+.article-fact.disputed .article-evidence {
+    background-color: #a31e1e;
+    color: #332929;
+    border-color: #741717;
+}
+
+.article-fact.unverified {
+    background-color: #737373;
+    color: white;
+}
+
+.article-fact.unverified .article-evidence {
+    background-color: #383838;
+    color: #332929;
+    border-color: #2b2b2b;
+}
+
+.article-fact.misleading {
+    background-color: #EA580C;
+    color: white;
+}
+
+.article-fact..article-fact.misleading .article-evidence {
+    background-color: #ac4610;
+    color: #332929;
+    border-color: #85380f;
+}

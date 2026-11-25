@@ -1,7 +1,16 @@
-html {
-    background-color: #242424;
+* {
+    box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    background-color: #ECCEA8;
+}
 .page {
     width: 60%;
     margin-left: auto;
@@ -12,12 +21,22 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 15px;
+
+    width: 100%;
+    min-height: 120px;
     padding-left: 10%;
-    
-    background: #0f0f0f;
+
+    background: #332929;
     color: white;
     border-bottom: 2px solid #575757;
+    margin: 0;
+}
+
+#sidetab {
+    position: absolute;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 h1 {
@@ -25,6 +44,7 @@ h1 {
     font-size: 48px;
     color: #ffffff;
     margin-bottom: -10px;
+    margin-left: 90px;
 }
 
 .smaller {
@@ -32,22 +52,47 @@ h1 {
     font-size: 20px;
     color: #ffffff;
     margin-top: 3px;
+    margin-left: 90px;
 }
 
 .navigation {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    width: auto;
+    height: auto;
 
     font-family: 'Geist Pixel', sans-serif;
     font-size: 20px;
     color: #ffffff;
 
-    margin-left: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 0px;
     margin-bottom: 20px;
+    
+    background: #423636;
+}
+
+navbut {
+    display: flex;
+    gap: 20px;
+    width: auto;
+    height: auto;
+
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+    margin-top: 10px;
 }
 
 .navigation a {
-    color: #77797a;
+    color: #acacac;
     text-decoration: none;
     font-size: 16px;
     align-items: center;
@@ -59,6 +104,211 @@ h1 {
     align-items: center;
     transition: 0.3s ease;
 }
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-search input,
+.nav-search select,
+.nav-search button {
+    background: #776868;
+    color: white;
+
+    padding: 8px 10px;
+
+}
+
+.search-filters {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 240px;
+    padding: 15px;
+    background: #181818;
+    z-index: 10;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-filters.active {
+    display: flex;
+}
+
+.search-filters label {
+    color: white;
+    font-size: 13px;
+}
+
+.search-filters select,
+.search-filters input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+.sidebar-toggle {
+    position: absolute;
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    z-index: 1002;
+    background: #181818;
+    color: white;
+    border: 1px solid #575757;
+    border-radius: 6px;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+
+
+.utility-sidebar {
+    position: fixed;
+    top: 135px;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px 14px;
+    background: #151515;
+    color: white;
+    border-right: 3px solid #424242;
+    z-index: 1001;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.utility-sidebar.active {
+    transform: translateX(0);
+}
+
+/* HEADER */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.sidebar-header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Geist Pixel', sans-serif;
+}
+
+.sidebar-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Geist Pixel', sans-serif;
+}
+
+/* SIDEBAR BUTTONS */
+.sidebar-tools,
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+
+    color: #d0d0d0;
+    font-family: 'Geist Pixel', sans-serif;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background 0.6s, color 0.2s;
+}
+
+.sidebar-button:hover {
+    background: linear-gradient(
+        -90deg,
+        #342f44,
+        #4d4464
+    );
+    color: white;
+    
+}
+
+.sidebar-icon {
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sidebar-label {
+    white-space: nowrap;
+}
+
+/* DIVIDER */
+.sidebar-divider {
+    height: 1px;
+    background: #3c3c3c;
+    margin: 12px 4px;
+}
+
+
+.sidebar-notification {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    font-family: 'Geist Pixel', sans-serif;
+    background: linear-gradient(
+        0deg,
+        #000000,
+        #000000 75%,
+        transparent 100%
+    );
+    color: white;
+    padding: 12px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 1100;
+}
+
+.sidebar-notification.active {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
 
 
 
@@ -106,10 +356,14 @@ h1 {
 }
 
 .country-card:hover {
-    background-color: #3b3b3b;
     border-color: #8299aa;
+    background: linear-gradient(
+        180deg,
+        #342f44,
+        #4d4464
+    );
     transform: scale(1.05);
-    brightness
+    filter: brightness(1.2), contrast(1.1);
 }
 
 .country-card img {
@@ -139,4 +393,167 @@ h1 {
     color: #aaaaaa;
     font-family: 'Geist Pixel', sans-serif;
     font-size: 14px;
+}
+
+
+
+.under-development {
+    position: relative;
+    overflow: hidden;
+}
+
+.under-development::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.under-development::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        135deg,
+        transparent 0px,
+        transparent 12px,
+        rgba(72, 72, 72, 0.12) 12px,
+        rgba(255, 255, 255, 0.12) 16px
+    );
+    z-index: 3; 
+    pointer-events: none;
+    filter: brightness(0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+
+    /* HEADER */
+    .top {
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 12px;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .smaller {
+        font-size: 13px;
+        width: 70%;
+        margin: -5px 0 0;
+    }
+
+    .sidebar-toggle {
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        margin: 0;
+        width: 45px;
+        height: 45px;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 15px;
+        margin: 0 0 15px;
+        display: flex;
+        gap: 20px;
+        width: auto;
+        height: auto;
+
+        font-family: 'Geist Pixel', sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    
+        background: #423636;
+    }
+
+    navbut {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .navigation a:hover {
+        font-size: 14px;
+    }
+
+    /* SEARCH */
+    .nav-search {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-search input {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .search-filters {
+        width: 100%;
+        right: 0;
+    }
+
+    /* MAIN PAGE */
+    .page {
+        width: 94%;
+    }
+
+    /* SIDEBAR */
+    .utility-sidebar {
+        top: 200px;
+        width: 375px;
+        height: 100dvh;
+    }
 }

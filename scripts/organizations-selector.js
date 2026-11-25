@@ -20,15 +20,36 @@ if (organizations.length === 0) {
     }
 }
 
+let renderedCount = 0;
+
 organizations.forEach(organization => {
+
+    const organizationStatus = organization.status ?? "Available";
+
+    // Hide organizations not yet implemented
+    if (organizationStatus === "Not_Implamented") {
+        return;
+    }
 
     const card = document.createElement("a");
     card.className = "organization-card";
     card.href = `organization.html?id=${encodeURIComponent(organization.id)}`;
 
+    // Apply development styling
+    if (organizationStatus === "Development") {
+        card.classList.add("under-development");
+    }
+
     const logo = document.createElement("img");
     logo.src = `organization/${organization.logo}`;
     logo.alt = `${organization.name} logo`;
+
+    logo.onerror = () => {
+        console.error(
+            `Organization logo failed to load for ${organization.name}:`,
+            logo.src
+        );
+    };
 
     const name = document.createElement("h2");
     name.textContent = organization.name ?? "Unnamed organization";
@@ -38,6 +59,8 @@ organizations.forEach(organization => {
 
     card.append(logo, name, type);
     grid.appendChild(card);
+
+    renderedCount++;
 });
 
-console.log(`Rendered ${organizations.length} organizations.`);
+console.log(`Rendered ${renderedCount} organizations.`);

@@ -14,6 +14,13 @@ if (countries.length === 0 && status) {
 }
 
 countries.forEach(([countryKey, country]) => {
+
+    const countryStatus = country.status ?? "Available";
+
+    if (countryStatus === "Not_Implemented") {
+        return;
+    }
+
     const card = document.createElement("a");
     card.className = "country-card";
     card.href = `country.html?id=${encodeURIComponent(countryKey)}`;
@@ -31,6 +38,10 @@ countries.forEach(([countryKey, country]) => {
 
     const type = document.createElement("p");
     type.textContent = country.region ?? "Region not specified";
+
+    if (countryStatus === "Development") {
+        card.classList.add("under-development");
+    }
 
     card.append(logo, name, type);
     grid.appendChild(card);
