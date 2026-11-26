@@ -269,7 +269,8 @@ export const news = [
         author: "GEOSPHERE",
         source: "Reuters",
         source_url: "https://www.reuters.com/world/middle-east/iran-says-it-will-use-all-available-tools-confront-us-naval-blockade-2026-11-23/",
-        content: "Iran has reiterated its opposition to the United States naval blockade on Iranian oil exports, with Foreign Ministry spokesperson Esmaeil Baghaei announcing that Tehran would use available means to confront the restrictions. The blockade was first imposed on April 13, 2026, before being lifted in June following a draft understanding between the two governments. It was reinstated on July 14 after the agreement collapsed. Baghaei characterized the blockade as military aggression and asserted Iran's right to defend itself. He also outlined conditions for restoring passage through the Strait of Hormuz, including an end to hostilities, the removal of the blockade, and the waiving of sanctions. The statements come amid continued diplomatic tensions between Washington and Tehran."
+        content: "Iran has reiterated its opposition to the United States naval blockade on Iranian oil exports, with Foreign Ministry spokesperson Esmaeil Baghaei announcing that Tehran would use available means to confront the restrictions. The blockade was first imposed on April 13, 2026, before being lifted in June following a draft understanding between the two governments. It was reinstated on July 14 after the agreement collapsed. Baghaei characterized the blockade as military aggression and asserted Iran's right to defend itself. He also outlined conditions for restoring passage through the Strait of Hormuz, including an end to hostilities, the removal of the blockade, and the waiving of sanctions. The statements come amid continued diplomatic tensions between Washington and Tehran.",
+        topic: "iran-war"
     },
 
     {

@@ -1,6 +1,7 @@
 
 import { news } from "../database/news.js";
 import { factchecks } from "../database/factcheck.js";
+import { topics } from "../database/topics.js";
 
 // Get article ID from URL
 const params = new URLSearchParams(window.location.search);
@@ -10,6 +11,10 @@ const articleId = (params.get("id") || "").toLowerCase();
 const article = news.find(
     item => String(item.id).toLowerCase() === articleId
 );
+
+
+
+
 
 // Find matching fact-check entry
 const factcheck = factchecks.find(
@@ -41,6 +46,25 @@ if (!article) {
 } else {
 
     document.title = `${article.title} | GEOSPHERE`;
+
+    const topic = topics.find(
+        item => item.id === article?.topic
+    );
+
+    const topicBanner = document.getElementById("article-topic-banner");
+    const topicName = document.getElementById("article-topics");
+    const topicImage = document.getElementById("article-topic-image");
+
+    if (topicBanner) {
+        if (topic) {
+            topicName.textContent = topic.name;
+
+            topicImage.src = `topics/${topic.banner}`;
+            topicImage.alt = topic.name;
+        } else {
+            topicBanner.style.display = "none";
+        }
+    }
 
     // Main heading
     document.getElementById("article-title").textContent =

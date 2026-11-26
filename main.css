@@ -539,33 +539,30 @@ sac {
 }
 
 .Globe {
-    width: 1000px;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
-    padding: 0 clamp(16px, 4vw, 64px);
-
-
     overflow: visible;
     background: transparent;
 }
 
 #globeViz {
-    flex: 1 1 100%;
-    min-width: 0;
-    height: 500px;
-    width: 1000px;
+    min-width: 300px;
+    height: 1000px;
+    width: 80%;
 
-    position: relative;
-    transition: flex 0.6s ease;
+    position: flex;
+    transition: transform 0.8s ease;
+    border: 5px solid rgba(255, 255, 255, 0.08);
 }
 
-#globeViz canvas {
-    display: flex;
-    width: 100%;
-    height: 100%;
+#globeViz.shift-left {
+    transform: translateX(-180px);
 }
-
 
 
 
@@ -609,14 +606,14 @@ sac {
 
 
 #panel::before {
-  content: "";
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 300%;
-  background: linear-gradient(to bottom, #4fc3f7, #7c4dff);
-  opacity: 0.8;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4fc3f7, #7c4dff);
+    opacity: 0.8;
 }
 
 #panel.active {
@@ -791,20 +788,6 @@ sac {
     margin-top: 15px;
 }
 
-
-
-.Loji {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 2px;
-}
-
-.Loji:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
 
 /* Mobile */
 @media (max-width: 600px) {

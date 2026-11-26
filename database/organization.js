@@ -162,15 +162,146 @@ export const organizations = [
     },
 
     {
-        // ORGANIZATION 2
-        id: 2,
-        name: "Thairath",
-        abbreviation: "THRTH",
-        logo: "THRTH.jpg",
+        id: "Bloomberg",
+        name: "Bloomberg",
+        abbreviation: "BMG",
+        logo: "BMG.png",
 
         type: "International Organization",
-        founded: "January 1, 2010",
-        headquarters: "Bangkok, Thailand",
+        founded: "October 1, 1981",
+        headquarters: "New York City, United States",
+
+        leader: "Name of Leader",
+        members: [
+            "Country 1",
+            "Country 2"
+        ],
+
+        website: "https://example.com",
+
+        desc: "A short description of the organization.",
+        status: "Development"
+    },
+
+    {
+        id: "DW",
+        name: "Deutsche Welle",
+        abbreviation: "DW",
+        logo: "DW.jpeg",
+
+        type: "International Organization",
+        founded: "May 3, 1953",
+        headquarters: "Bonn, Germany",
+
+        leader: "Name of Leader",
+        members: [
+            "Country 1",
+            "Country 2"
+        ],
+
+        website: "https://example.com",
+
+        desc: "A short description of the organization.",
+        status: "Development"
+    },
+
+    {
+        id: "NHK",
+        name: "Japan Broadcasting Corporation",
+        abbreviation: "NHK",
+        logo: "NHK.png",
+
+        type: "International Organization",
+        founded: "August 6, 1926",
+        headquarters: "Tokyo, Japan",
+
+        leader: "Name of Leader",
+        members: [
+            "Country 1",
+            "Country 2"
+        ],
+
+        website: "https://example.com",
+
+        desc: "A short description of the organization.",
+        status: "Development"
+    },
+
+    {
+        id: "SCMP",
+        name: "South China Morning Post",
+        abbreviation: "SCMP",
+        logo: "SCMP.png",
+
+        type: "International Organization",
+        founded: "November 6, 1903",
+        headquarters: "Causeway Bay, Hong Kong",
+
+        leader: "Name of Leader",
+        members: [
+            "Country 1",
+            "Country 2"
+        ],
+
+        website: "https://example.com",
+
+        desc: "A short description of the organization.",
+        status: "Development"
+    },
+
+    {
+        id: "CNA",
+        name: "Channel NewsAsia",
+        abbreviation: "CNA",
+        logo: "CNA.png",
+
+        type: "International Organization",
+        founded: "May 1, 1999",
+        headquarters: "	Mediacorp Campus, One-north, Singapore",
+
+        leader: "Name of Leader",
+        members: [
+            "Country 1",
+            "Country 2"
+        ],
+
+        website: "https://example.com",
+
+        desc: "A short description of the organization.",
+        status: "Development"
+    },
+
+    {
+        id: "TGD",
+        name: "The Guardian",
+        abbreviation: "TGD",
+        logo: "TGD.jpg",
+
+        type: "International Organization",
+        founded: "May 5, 1821",
+        headquarters: "Kings Place, London",
+
+        leader: "Name of Leader",
+        members: [
+            "Country 1",
+            "Country 2"
+        ],
+
+        website: "https://example.com",
+
+        desc: "A short description of the organization.",
+        status: "Development"
+    },
+
+    {
+        id: "NYT",
+        name: "The New York Times",
+        abbreviation: "NYT",
+        logo: "NYT.png",
+
+        type: "International Organization",
+        founded: "September 18, 1851",
+        headquarters: "Manhattan, United States",
 
         leader: "Name of Leader",
         members: [

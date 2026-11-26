@@ -2,26 +2,41 @@ export const factchecks = [
     {
         articleId: 19,
         status: "verified",
-        factsummary: "The Gen Z Mob announced plans to hold a demonstration at Bangkok's Democracy Monument. The announcement was reported by Thairath, identifying the planned protest and its intended location. Further independent reporting or confirmation of the demonstration's occurrence has not yet been added.",
+        factsummary: "The Gen Z Mob announced plans to hold a demonstration at Bangkok's Democracy Monument. The announcement was reported by Thairath and supported by the organizers' social media announcement. A statement from Chulalongkorn University's Student Government provides additional context regarding student support for the demonstration. Confirmation of the demonstration's actual occurrence has not yet been added.",
 
         claims: [
             {
                 id: 1,
                 statement: "The Gen Z Mob announced a demonstration at Bangkok's Democracy Monument.",
-
                 status: "Verified",
 
                 evidence: [
                     {
-                        title: "Original Thairath report",
+                       title: "Original Thairath Report",
                         source: "Thairath",
                         url: "https://en.thairath.co.th/news/local/2973595",
                         type: "News Report",
                         supports: true
+                    },
+
+                    {
+                        title: "Gathering Poster Demonstration Post",
+                        source: "Gen Z Mob",
+                        url: "https://www.facebook.com/share/p/1Emari1FLK/",
+                        type: "Social Media",
+                        supports: true
+                    },
+
+                    {
+                        title: "Chulalongkorn's Statement regarding the demonstration",
+                        source: "Chulalongkorn University Student Government",
+                        url: "https://www.facebook.com/share/p/152maKgFzKE/",
+                        type: "Institutional Statement",
+                        supports: true
                     }
                 ],
 
-                notes: "The original report describes the planned demonstration. Independent confirmation has not yet been added."
+                notes: "The Thairath report and organizers' social media announcement support the planned demonstration. The Chulalongkorn University Student Government statement provides additional context regarding student support. These sources do not independently confirm that the demonstration took place."
             }
         ]
     },
