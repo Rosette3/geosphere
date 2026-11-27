@@ -539,21 +539,28 @@ sac {
 }
 
 .Globe {
-    height: auto;
-    width: 80%;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: 20px;
+}
 
-    margin-left: auto;
-    margin-right: auto;
-    overflow: visible;
-    background: transparent;
+
+.Globe:has(#panel.active) #panel {
+    width: 350px;
+
+    opacity: 1;
+    transform: translateX(-100px);
+    pointer-events: auto;
 }
 
 #globeViz {
     min-width: 300px;
     height: 1000px;
-    width: 80%;
+    width: 100%;
 
     position: flex;
     transition: transform 0.8s ease;
@@ -561,26 +568,31 @@ sac {
 }
 
 #globeViz.shift-left {
-    transform: translateX(-180px);
+    transform: translateX(-10px);
+    width: 80%;
+    width: transform 0.8s ease;
+    height: 800px;
+}
+
+canvas {
+    margin-top: -50px;
+    width: 250px;
+    height: 250px;
+}
+
+canvas:has(#panel.active) {
+    margin-top: -100px;
+    width: 700px;
+    height: 700px;
 }
 
 
-
-.Globe:has(#panel.active) #panel {
-    flex: 0 0 350px;
-    width: 350px;
-    padding: 10px;
-
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-}
 
 
 
 #panel {
-    position: relative;
-    width: 350px;
+    position: flex;
+    width: 40%;
     height: 100vh;
 
     overflow-y: auto;
